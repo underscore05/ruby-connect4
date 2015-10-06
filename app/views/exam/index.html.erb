@@ -6,18 +6,19 @@
 		<h3>Connect Four</h3>
 		<table class="table">
 			<tr>
-				<th ng-click="board.answer(0, 1)">1</th>
-				<th ng-click="board.answer(1, 1)">2</th>
-				<th ng-click="board.answer(2, 1)">3</th>
-				<th ng-click="board.answer(3, 1)">4</th>
-				<th ng-click="board.answer(4, 1)">5</th>
-				<th ng-click="board.answer(5, 1)">6</th>
-				<th ng-click="board.answer(6, 1)">7</th>
+				<th ng-click="board.answer(0, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
+				<th ng-click="board.answer(1, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
+				<th ng-click="board.answer(2, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
+				<th ng-click="board.answer(3, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
+				<th ng-click="board.answer(4, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
+				<th ng-click="board.answer(5, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
+				<th ng-click="board.answer(6, 1)"><span class="glyphicon glyphicon-circle-arrow-down"></span></th>
 			</tr>
 			<tr ng-repeat="(y, row) in board.grid">
 				<td ng-repeat="(x, col) in board.grid[y] track by x"><span class="disc disc{{col}}">{{col}}</span></td>
 			</tr>
 		</table>
+		<p> This is a two player game. Every players goal is to make 4 in a row either horizontally, vertically or diagonally.</p>
 	</div>
 </div>
 <style>
