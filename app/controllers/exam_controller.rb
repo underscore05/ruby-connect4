@@ -1,13 +1,2 @@
-class ExamController <  ApplicationController
-	
-	def index 
-	end
-
+class ExamController < ApplicationController
 end
-
-
-
-
-
-
-

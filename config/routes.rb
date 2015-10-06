@@ -5,13 +5,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  get "exam/method_name"
-  get "exam/reset"
-  get "exam/answer"
-  get "exam/check"
-  get "exam/show_board"
-  get "exam/index"
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
